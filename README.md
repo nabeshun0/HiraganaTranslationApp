@@ -1,2 +1,2 @@
-# Hiragana
+# HiraganaTranslationApp
 HiraganaTranslationApp for iOS
