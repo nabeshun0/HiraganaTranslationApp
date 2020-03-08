@@ -69,6 +69,7 @@
 			sourceTree = "<group>";
 		};
 				5E18E7B42415346E00CC4834 /* AppConst.swift */,
+				5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */,
 				5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */,
 				5E18E7A62414E66F00CC4834 /* HiraganaTranslatorAPI.swift */,
 				5E18E7A82414E67B00CC4834 /* HiraganaTranslatorEntity.swift */,
