@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */; };
+		5E18E7A92414E67B00CC4834 /* HiraganaTranslatorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A82414E67B00CC4834 /* HiraganaTranslatorEntity.swift */; };
 		5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E18E7B02414EF1700CC4834 /* APIKit.framework */; };
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
 		5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6120241144CF00B16CCC /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
+		5E18E7A82414E67B00CC4834 /* HiraganaTranslatorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaTranslatorEntity.swift; sourceTree = "<group>"; };
 		5E18E7B02414EF1700CC4834 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		5E8A6116241144CD00B16CCC /* HiraganaTranslationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaTranslationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8A6119241144CD00B16CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+				5E18E7A82414E67B00CC4834 /* HiraganaTranslatorEntity.swift */,
 		5E8A610D241144CD00B16CCC = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */,
+				5E18E7A92414E67B00CC4834 /* HiraganaTranslatorEntity.swift in Sources */,
 				5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
