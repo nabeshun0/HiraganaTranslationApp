@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TranslationViewController" customModule="HiraganaTranslationApp" customModuleProvider="target">
+            <connections>
+                <outlet property="afterTranslationTextView" destination="RRt-zn-8Dh" id="VKf-1v-ANR"/>
+                <outlet property="beforeTranslationTextView" destination="yFp-YJ-2c3" id="Ck2-9c-YgH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="a36-pX-o3H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sO5-k6-KEb" userLabel="stackView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="翻訳したい文章を入力してください。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yFp-YJ-2c3" userLabel="beforeTranslationTextView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="408.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVi-4d-SFM" userLabel="borderView">
+                            <rect key="frame" x="0.0" y="408.5" width="414" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="SCM-iS-HWd"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="訳文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-zn-8Dh" userLabel="afterTranslationTextView">
+                            <rect key="frame" x="0.0" y="409.5" width="414" height="408.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="RRt-zn-8Dh" firstAttribute="height" secondItem="sO5-k6-KEb" secondAttribute="height" multiplier="1:2" constant="-0.5" id="2GL-Pm-cwk"/>
+                        <constraint firstItem="yFp-YJ-2c3" firstAttribute="height" secondItem="sO5-k6-KEb" secondAttribute="height" multiplier="1:2" constant="-0.5" id="3Iu-kF-xDN"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Bwt-7K-oys"/>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gO8-e0-QVB"/>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="kbz-Sh-JGo"/>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wIv-9N-vo8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
