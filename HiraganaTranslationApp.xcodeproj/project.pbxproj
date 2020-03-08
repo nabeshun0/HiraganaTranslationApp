@@ -10,6 +10,7 @@
 		5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */; };
 		5E18E7A72414E66F00CC4834 /* HiraganaTranslatorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A62414E66F00CC4834 /* HiraganaTranslatorAPI.swift */; };
 		5E18E7A92414E67B00CC4834 /* HiraganaTranslatorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A82414E67B00CC4834 /* HiraganaTranslatorEntity.swift */; };
+		5E18E7AB2414EAE200CC4834 /* AppRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7AA2414EAE200CC4834 /* AppRequestType.swift */; };
 		5E18E7AD2414ECBA00CC4834 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7AC2414ECBA00CC4834 /* APIRoutes.swift */; };
 		5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E18E7B02414EF1700CC4834 /* APIKit.framework */; };
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 		5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
 		5E18E7A62414E66F00CC4834 /* HiraganaTranslatorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaTranslatorAPI.swift; sourceTree = "<group>"; };
 		5E18E7A82414E67B00CC4834 /* HiraganaTranslatorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaTranslatorEntity.swift; sourceTree = "<group>"; };
+		5E18E7AA2414EAE200CC4834 /* AppRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestType.swift; sourceTree = "<group>"; };
 		5E18E7AC2414ECBA00CC4834 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
 		5E18E7B02414EF1700CC4834 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		5E8A6116241144CD00B16CCC /* HiraganaTranslationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaTranslationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E18E7AD2414ECBA00CC4834 /* APIRoutes.swift in Sources */,
+				5E18E7AB2414EAE200CC4834 /* AppRequestType.swift in Sources */,
 				5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */,
+				5E18E7A72414E66F00CC4834 /* HiraganaTranslatorAPI.swift in Sources */,
 				5E18E7A92414E67B00CC4834 /* HiraganaTranslatorEntity.swift in Sources */,
 				5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */,
 			);
