@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */; };
-		5E18E7B12414EF1700CC4834 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E18E7B02414EF1700CC4834 /* APIKit.framework */; };
+		5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E18E7B02414EF1700CC4834 /* APIKit.framework */; };
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
 		5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6120241144CF00B16CCC /* Assets.xcassets */; };
 		5E8A6124241144CF00B16CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */; };
@@ -31,13 +31,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E18E7B12414EF1700CC4834 /* APIKit.framework in Frameworks */,
+				5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E18E7A32414E55B00CC4834 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E18E7B82415416200CC4834 /* HiraganaTranslator */,
+				5E18E7AA2414EAE200CC4834 /* AppRequestType.swift */,
+				5E18E7AC2414ECBA00CC4834 /* APIRoutes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5E18E7AF2414EF1700CC4834 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 			);
 			name = "Run Script(Carthage)";
 			outputFileListPaths = (
@@ -161,7 +172,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect --format\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		5E8A612B24114DDD00B16CCC /* Run Script(SwiftLint) */ = {
 			isa = PBXShellScriptBuildPhase;
