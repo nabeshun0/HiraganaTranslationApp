@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */; };
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
 		5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6120241144CF00B16CCC /* Assets.xcassets */; };
 		5E8A6124241144CF00B16CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */; };
+		5EF7C3672411DBBE00CF3F60 /* TranslationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
 		5E8A6116241144CD00B16CCC /* HiraganaTranslationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaTranslationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8A6119241144CD00B16CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E8A6120241144CF00B16CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8A6123241144CF00B16CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E8A6125241144CF00B16CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				5E8A6119241144CD00B16CCC /* AppDelegate.swift */,
+				5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */,
+				5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */,
 				5E8A6120241144CF00B16CCC /* Assets.xcassets */,
 				5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */,
 				5E8A6125241144CF00B16CCC /* Info.plist */,
@@ -117,6 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF7C3672411DBBE00CF3F60 /* TranslationViewController.xib in Resources */,
 				5E8A6124241144CF00B16CCC /* LaunchScreen.storyboard in Resources */,
 				5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */,
 			);
@@ -150,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */,
 				5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
