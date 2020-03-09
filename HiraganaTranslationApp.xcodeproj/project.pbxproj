@@ -90,8 +90,7 @@
 		5E18E7B7241540BB00CC4834 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */,
-				5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */,
+				5E8EF65E24163B940070CE8B /* HiraganaTranslator */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -129,9 +128,34 @@
 				5E18E7B32415345700CC4834 /* Commons */,
 				5E18E7B7241540BB00CC4834 /* Controllers */,
 				5E18E7A32414E55B00CC4834 /* Models */,
+				5E8EF65C24163AF80070CE8B /* Views */,
 				5E18E7B6241540AC00CC4834 /* Resources */,
 			);
 			path = HiraganaTranslationApp;
+			sourceTree = "<group>";
+		};
+		5E8EF65C24163AF80070CE8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E8EF65D24163B3D0070CE8B /* HiraganaTranslator */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E8EF65D24163B3D0070CE8B /* HiraganaTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */,
+			);
+			path = HiraganaTranslator;
+			sourceTree = "<group>";
+		};
+		5E8EF65E24163B940070CE8B /* HiraganaTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */,
+			);
+			path = HiraganaTranslator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
