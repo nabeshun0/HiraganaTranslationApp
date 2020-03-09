@@ -33,7 +33,7 @@
 
 ## 🌈 ViewControllers
 - TranslationViewController
-  - 画面上部の入力エリアにワード(漢字)を入力し、結果を出力エリア:UITextViewに表示する
+  - 画面上部の入力エリアにワード(漢字)を入力し、結果を画面下部の出力エリアに表示する
   
 ## 🌍 API
 - ドキュメント
