@@ -23,6 +23,11 @@ final class TranslationViewController: UIViewController {
         beforeTranslationTextView.delegate = self
         hiraganaTranslatorModel.delegate = self
     }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
     private func setupNavBar() {
         self.title = AppConst.hiraganaTranslation
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(removeText(_:)))
