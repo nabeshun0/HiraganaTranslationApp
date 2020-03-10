@@ -19,8 +19,15 @@ final class TranslationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavBar()
         beforeTranslationTextView.delegate = self
         hiraganaTranslatorModel.delegate = self
+    }
+    private func setupNavBar() {
+        self.title = AppConst.hiraganaTranslation
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9078665376, green: 0.487560451, blue: 0.2430685163, alpha: 1)
+    }
     }
 }
 
