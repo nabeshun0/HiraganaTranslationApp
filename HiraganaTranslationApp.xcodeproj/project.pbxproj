@@ -18,6 +18,7 @@
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
 		5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6120241144CF00B16CCC /* Assets.xcassets */; };
 		5E8A6124241144CF00B16CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */; };
+		5EC2AC7824169042006A1113 /* UIView-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2AC7724169042006A1113 /* UIView-extensions.swift */; };
 		5EF7C3672411DBBE00CF3F60 /* TranslationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		5E8A6120241144CF00B16CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8A6123241144CF00B16CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E8A6125241144CF00B16CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EC2AC7724169042006A1113 /* UIView-extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-extensions.swift"; sourceTree = "<group>"; };
 		5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 		5E18E7B32415345700CC4834 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				5EC2AC7624168FFD006A1113 /* Extensions */,
 				5E18E7B42415346E00CC4834 /* AppConst.swift */,
 			);
 			path = Commons;
@@ -156,6 +159,14 @@
 				5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */,
 			);
 			path = HiraganaTranslator;
+			sourceTree = "<group>";
+		};
+		5EC2AC7624168FFD006A1113 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EC2AC7724169042006A1113 /* UIView-extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 				5E18E7AB2414EAE200CC4834 /* AppRequestType.swift in Sources */,
 				5E18E7A22414CDC000CC4834 /* TranslationViewController.swift in Sources */,
 				5E18E7A72414E66F00CC4834 /* HiraganaTranslatorAPI.swift in Sources */,
+				5EC2AC7824169042006A1113 /* UIView-extensions.swift in Sources */,
 				5E18E7A92414E67B00CC4834 /* HiraganaTranslatorEntity.swift in Sources */,
 				5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */,
 				5E18E7B52415346E00CC4834 /* AppConst.swift in Sources */,

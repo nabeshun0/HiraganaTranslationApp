@@ -6,4 +6,5 @@ struct AppConst {
     static let error = "error"
     static let hiragana = "hiragana"
     static let translationViewController = "TranslationViewController"
+    static let hiraganaTranslation = "ひらがな変換"
 }

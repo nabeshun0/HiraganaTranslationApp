@@ -21,40 +21,46 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sO5-k6-KEb" userLabel="stackView">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sO5-k6-KEb" userLabel="stackView">
+                    <rect key="frame" x="20" y="64" width="374" height="778"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="翻訳したい文章を入力してください。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yFp-YJ-2c3" userLabel="beforeTranslationTextView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="408.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVi-4d-SFM" userLabel="borderView">
-                            <rect key="frame" x="0.0" y="408.5" width="414" height="1"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="1" id="SCM-iS-HWd"/>
-                            </constraints>
-                        </view>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="訳文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-zn-8Dh" userLabel="afterTranslationTextView">
-                            <rect key="frame" x="0.0" y="409.5" width="414" height="408.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="379"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="訳文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-zn-8Dh" userLabel="afterTranslationTextView">
+                            <rect key="frame" x="0.0" y="399" width="374" height="379"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textView>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="RRt-zn-8Dh" firstAttribute="height" secondItem="sO5-k6-KEb" secondAttribute="height" multiplier="1:2" constant="-0.5" id="2GL-Pm-cwk"/>
-                        <constraint firstItem="yFp-YJ-2c3" firstAttribute="height" secondItem="sO5-k6-KEb" secondAttribute="height" multiplier="1:2" constant="-0.5" id="3Iu-kF-xDN"/>
-                    </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
-                <constraint firstItem="sO5-k6-KEb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Bwt-7K-oys"/>
-                <constraint firstItem="sO5-k6-KEb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gO8-e0-QVB"/>
-                <constraint firstItem="sO5-k6-KEb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="kbz-Sh-JGo"/>
-                <constraint firstItem="sO5-k6-KEb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wIv-9N-vo8"/>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Bwt-7K-oys"/>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gO8-e0-QVB"/>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-20" id="kbz-Sh-JGo"/>
+                <constraint firstItem="sO5-k6-KEb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="wIv-9N-vo8"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
