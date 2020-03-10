@@ -1,7 +1,7 @@
 ## 🚀 HiraganaTranslationApp
 - 漢字をひらがなに変換するアプリです。
 
-<img width="340" alt="スクリーンショット 2020-03-09 0 34 42" src="https://user-images.githubusercontent.com/38596913/76198230-0846d200-6231-11ea-90c8-df0b959cdee5.png">
+<img width="340" alt="スクリーンショット 2020-03-10 0 17 15" src="https://user-images.githubusercontent.com/38596913/76273654-bac67580-62c1-11ea-9bfb-af9028f12bd2.png">
 
 
 ## 📖 ライブラリ管理
