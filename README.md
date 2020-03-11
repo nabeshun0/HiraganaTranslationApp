@@ -1,6 +1,11 @@
 ## 🚀 HiraganaTranslationApp
 - 漢字をひらがなに変換するアプリです。
 
+[![GitHub issues](https://img.shields.io/github/issues/snt-nbzw/HiraganaTranslationApp?color=brightgreen)](https://github.com/snt-nbzw/HiraganaTranslationApp/issues)
+[![GitHub forks](https://img.shields.io/github/forks/snt-nbzw/HiraganaTranslationApp)](https://github.com/snt-nbzw/HiraganaTranslationApp/network)
+[![GitHub stars](https://img.shields.io/github/stars/snt-nbzw/HiraganaTranslationApp)](https://github.com/snt-nbzw/HiraganaTranslationApp/stargazers)
+[![GitHub license](https://img.shields.io/github/license/snt-nbzw/HiraganaTranslationApp)](https://github.com/snt-nbzw/HiraganaTranslationApp)
+
 <img width="340" alt="スクリーンショット 2020-03-10 0 17 15" src="https://user-images.githubusercontent.com/38596913/76273654-bac67580-62c1-11ea-9bfb-af9028f12bd2.png">
 
 ## 📝 目次
