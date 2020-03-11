@@ -1,5 +1,13 @@
 import APIKit
 
+public enum APPErrorCode: Int, Error {
+    case error400 = 400
+    case error401 = 401
+    case error403 = 403
+    case error404 = 404
+    case error500 = 500
+}
+
 final class DecodableDataParser: DataParser {
     public var contentType: String? {
         return "application/json"
@@ -21,6 +29,31 @@ extension AppRequestType {
     public var headerFields: [String: String] {
         return  ["Content-Type": "application/json",
                  "charset": "utf-8"]
+    }
+
+    public func intercept(object: Any, urlResponse: HTTPURLResponse) throws -> Any {
+        switch urlResponse.statusCode {
+        case 200..<300:
+            return object
+        case 400:
+            throw APPErrorCode.error400
+        case 401:
+            throw APPErrorCode.error401
+        case 403:
+            throw APPErrorCode.error403
+        case 404:
+            throw APPErrorCode.error404
+        case 500:
+            throw APPErrorCode.error500
+        default:
+            throw ResponseError.unacceptableStatusCode(urlResponse.statusCode)
+        }
+    }
+
+    public func intercept(urlRequest: URLRequest) throws -> URLRequest {
+        var req = urlRequest
+        req.timeoutInterval = 5.0
+        return req
     }
 }
 
