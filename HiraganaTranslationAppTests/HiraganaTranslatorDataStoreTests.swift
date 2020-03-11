@@ -25,6 +25,6 @@ class HiraganaTranslatorDataStoreTests: XCTestCase {
                 XCTAssert(false, error.localizedDescription)
             }
         }
-        waitForExpectations(timeout: 3.0, handler: nil)
+        waitForExpectations(timeout: 5.0, handler: nil)
     }
 }
