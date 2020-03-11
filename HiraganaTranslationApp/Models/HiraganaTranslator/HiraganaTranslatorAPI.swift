@@ -1,7 +1,7 @@
 import APIKit
 import Foundation
 
-public class HiraganaTranslatorAPI {
+final class HiraganaTranslatorAPI {
 
     private struct Const {
         static let appId = "9a12d3620f719a654936a3180d90758d52ffdaf9b400cf6cd15ce14173a6cbb4"
@@ -16,9 +16,9 @@ public class HiraganaTranslatorAPI {
 
         typealias Response = HiraganaTranslatorEntity
 
-        let appId = Const.appId
-        let sentence: String
-        let outputType = AppConst.hiragana
+        private let appId = Const.appId
+        private let sentence: String
+        private let outputType = AppConst.hiragana
 
         init(sentence: String) {
             self.sentence = sentence

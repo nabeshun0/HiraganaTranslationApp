@@ -40,7 +40,7 @@ final class HiraganaTranslatorModel {
         }
     }()
 
-    func fetchHiragana() {
+    private func fetchHiragana() {
         if sentence.isEmpty { return }
 
         Session.send(HiraganaTranslatorAPI.Request(sentence: sentence), callbackQueue: nil) { [weak self] (result) in
