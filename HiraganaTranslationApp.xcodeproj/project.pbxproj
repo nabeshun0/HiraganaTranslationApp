@@ -18,9 +18,26 @@
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
 		5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6120241144CF00B16CCC /* Assets.xcassets */; };
 		5E8A6124241144CF00B16CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */; };
+		5EA868E22417EA0800924460 /* HiraganaTranslatorDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA868E12417EA0800924460 /* HiraganaTranslatorDataStoreTests.swift */; };
+		5EA868E52417EDA800924460 /* AppRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7AA2414EAE200CC4834 /* AppRequestType.swift */; };
+		5EA868E72417EDBA00924460 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7AC2414ECBA00CC4834 /* APIRoutes.swift */; };
+		5EA868E82417EDCB00924460 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7B42415346E00CC4834 /* AppConst.swift */; };
+		5EA868E92417F2C900924460 /* HiraganaTranslatorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A62414E66F00CC4834 /* HiraganaTranslatorAPI.swift */; };
+		5EA868EA2417F2EC00924460 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E18E7B02414EF1700CC4834 /* APIKit.framework */; };
+		5EA868EB2417F2FD00924460 /* HiraganaTranslatorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7A82414E67B00CC4834 /* HiraganaTranslatorEntity.swift */; };
 		5EC2AC7824169042006A1113 /* UIView-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2AC7724169042006A1113 /* UIView-extensions.swift */; };
 		5EF7C3672411DBBE00CF3F60 /* TranslationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EA868DC2417E5BE00924460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E8A610E241144CD00B16CCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E8A6115241144CD00B16CCC;
+			remoteInfo = HiraganaTranslationApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +53,9 @@
 		5E8A6120241144CF00B16CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8A6123241144CF00B16CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E8A6125241144CF00B16CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA868D72417E5BE00924460 /* HiraganaTranslationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiraganaTranslationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA868DB2417E5BE00924460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EA868E12417EA0800924460 /* HiraganaTranslatorDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaTranslatorDataStoreTests.swift; sourceTree = "<group>"; };
 		5EC2AC7724169042006A1113 /* UIView-extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-extensions.swift"; sourceTree = "<group>"; };
 		5EF7C3662411DBBE00CF3F60 /* TranslationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +66,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA868D42417E5BE00924460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA868EA2417F2EC00924460 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8A6118241144CD00B16CCC /* HiraganaTranslationApp */,
+				5EA868D82417E5BE00924460 /* HiraganaTranslationAppTests */,
 				5E8A6117241144CD00B16CCC /* Products */,
 				5E18E7AF2414EF1700CC4834 /* Frameworks */,
 			);
@@ -121,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8A6116241144CD00B16CCC /* HiraganaTranslationApp.app */,
+				5EA868D72417E5BE00924460 /* HiraganaTranslationAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +191,15 @@
 			path = HiraganaTranslator;
 			sourceTree = "<group>";
 		};
+		5EA868D82417E5BE00924460 /* HiraganaTranslationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EA868E12417EA0800924460 /* HiraganaTranslatorDataStoreTests.swift */,
+				5EA868DB2417E5BE00924460 /* Info.plist */,
+			);
+			path = HiraganaTranslationAppTests;
+			sourceTree = "<group>";
+		};
 		5EC2AC7624168FFD006A1113 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +230,24 @@
 			productReference = 5E8A6116241144CD00B16CCC /* HiraganaTranslationApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5EA868D62417E5BE00924460 /* HiraganaTranslationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA868E02417E5BE00924460 /* Build configuration list for PBXNativeTarget "HiraganaTranslationAppTests" */;
+			buildPhases = (
+				5EA868D32417E5BE00924460 /* Sources */,
+				5EA868D42417E5BE00924460 /* Frameworks */,
+				5EA868D52417E5BE00924460 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EA868DD2417E5BE00924460 /* PBXTargetDependency */,
+			);
+			name = HiraganaTranslationAppTests;
+			productName = HiraganaTranslationAppTests;
+			productReference = 5EA868D72417E5BE00924460 /* HiraganaTranslationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +260,10 @@
 				TargetAttributes = {
 					5E8A6115241144CD00B16CCC = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					5EA868D62417E5BE00924460 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 5E8A6115241144CD00B16CCC;
 					};
 				};
 			};
@@ -220,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				5E8A6115241144CD00B16CCC /* HiraganaTranslationApp */,
+				5EA868D62417E5BE00924460 /* HiraganaTranslationAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +294,13 @@
 				5EF7C3672411DBBE00CF3F60 /* TranslationViewController.xib in Resources */,
 				5E8A6124241144CF00B16CCC /* LaunchScreen.storyboard in Resources */,
 				5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA868D52417E5BE00924460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +363,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5EA868D32417E5BE00924460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA868E22417EA0800924460 /* HiraganaTranslatorDataStoreTests.swift in Sources */,
+				5EA868E72417EDBA00924460 /* APIRoutes.swift in Sources */,
+				5EA868E52417EDA800924460 /* AppRequestType.swift in Sources */,
+				5EA868EB2417F2FD00924460 /* HiraganaTranslatorEntity.swift in Sources */,
+				5EA868E92417F2C900924460 /* HiraganaTranslatorAPI.swift in Sources */,
+				5EA868E82417EDCB00924460 /* AppConst.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EA868DD2417E5BE00924460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E8A6115241144CD00B16CCC /* HiraganaTranslationApp */;
+			targetProxy = 5EA868DC2417E5BE00924460 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */ = {
@@ -474,6 +564,54 @@
 			};
 			name = Release;
 		};
+		5EA868DE2417E5BE00924460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7H9CW555FJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HiraganaTranslationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabeshun.HiraganaTranslationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiraganaTranslationApp.app/HiraganaTranslationApp";
+			};
+			name = Debug;
+		};
+		5EA868DF2417E5BE00924460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7H9CW555FJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = HiraganaTranslationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nabeshun.HiraganaTranslationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiraganaTranslationApp.app/HiraganaTranslationApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -491,6 +629,15 @@
 			buildConfigurations = (
 				5E8A6129241144CF00B16CCC /* Debug */,
 				5E8A612A241144CF00B16CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA868E02417E5BE00924460 /* Build configuration list for PBXNativeTarget "HiraganaTranslationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA868DE2417E5BE00924460 /* Debug */,
+				5EA868DF2417E5BE00924460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
