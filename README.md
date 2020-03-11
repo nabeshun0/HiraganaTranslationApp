@@ -10,7 +10,7 @@
 1. [静的管理ツール](#静的管理ツール)
 1. [GitFlow](#GitFlow)
 1. [設計](#設計)
-1. [🌈 ViewControllers](#🌈 ViewControllers)
+1. [🌈 ViewControllers](#🌈ViewControllers)
 1. [API](#API)
 1. [導入方法](#導入方法)
 1. [必要条件](#必要条件)
