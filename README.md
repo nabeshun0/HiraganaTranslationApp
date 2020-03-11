@@ -3,6 +3,16 @@
 
 <img width="340" alt="スクリーンショット 2020-03-10 0 17 15" src="https://user-images.githubusercontent.com/38596913/76273654-bac67580-62c1-11ea-9bfb-af9028f12bd2.png">
 
+## 📝 目次
+
+1. [ライブラリ管理](#ライブラリ管理)
+1. [Development](#Development)
+1. [Other command](#Other%20command)
+1. [Technology used](#Technology%20used)
+1. [Future features](#Future%20features)
+1. [Contributing](#Contributing)
+1. [License](#License)
+
 
 ## 📖 ライブラリ管理
 - Carthage version: 0.34.0 
@@ -55,6 +65,11 @@ carthage update --platform iOS
 
 ## ⚠️ 注意事項
 - [API利用登録 ｜ソフト・アプリ開発のAPIなら【gooラボ】](https://labs.goo.ne.jp/jp/apiregister/)
+
+## 🙌 今後の機能
+- [ ] カタカナ変換機能
+- [ ] クリップボードにコピー機能
+- [ ] 縦書き機能
 
 ## 🎉 クレジット
 
