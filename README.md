@@ -65,9 +65,15 @@ $ curl -H "Content-type: application/json" -X POST -d '{"app_id":"[appId]", "sen
 ```
 
 ## 🏋️ 導入方法
+- Carthage
 ```
-carthage update --platform iOS
+$ carthage update --platform iOS
 ```
+- 起動
+```
+$ open HiraganaTranslationApp.xcodeproj
+```
+
 
 ## 🎡 必要条件
 - Xcode 10.2 or later
