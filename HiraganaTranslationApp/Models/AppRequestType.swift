@@ -1,5 +1,13 @@
 import APIKit
 
+public enum APPErrorCode: Int, Error {
+    case error400 = 400
+    case error401 = 401
+    case error403 = 403
+    case error404 = 404
+    case error500 = 500
+}
+
 final class DecodableDataParser: DataParser {
     public var contentType: String? {
         return "application/json"
