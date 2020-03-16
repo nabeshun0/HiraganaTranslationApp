@@ -1,1 +1,12 @@
-
+/* Commons */
+"translationViewController" = "TranslationViewController";
+/* Message */
+"ok" = "OK";
+"error" = "error";
+"unknownError" = "Unknown error";
+/* Titles */
+"hiraganaTranslation" = "HiraganaTranslation";
+/* Translation */
+"hiragana" = "hiragana";
+"inputTextView" = "Enter the text you want to translate.";
+"outputTextView" = "Translation";

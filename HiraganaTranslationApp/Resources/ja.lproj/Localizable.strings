@@ -1,1 +1,12 @@
-
+/* Commons */
+"translationViewController" = "TranslationViewController";
+/* Message */
+"ok" = "OK";
+"error" = "error";
+"unknownError" = "Unknown error";
+/* Titles */
+"hiraganaTranslation" = "ひらがな変換";
+/* Translation */
+"hiragana" = "hiragana";
+"inputTextView" = "翻訳したい文章を入力してください。";
+"outputTextView" = "訳文";

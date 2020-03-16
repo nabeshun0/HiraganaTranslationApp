@@ -15,6 +15,7 @@
 		5E18E7AD2414ECBA00CC4834 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7AC2414ECBA00CC4834 /* APIRoutes.swift */; };
 		5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E18E7B02414EF1700CC4834 /* APIKit.framework */; };
 		5E4B50D5241F2CC100974996 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4B50D4241F2CC100974996 /* Colors.xcassets */; };
+		5E75FC5B241F973900AC1576 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EB85D18241F50F0006F9E52 /* Localizable.strings */; };
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
 		5E8A6121241144CF00B16CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6120241144CF00B16CCC /* Assets.xcassets */; };
 		5E8A6124241144CF00B16CCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */; };
@@ -310,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75FC5B241F973900AC1576 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

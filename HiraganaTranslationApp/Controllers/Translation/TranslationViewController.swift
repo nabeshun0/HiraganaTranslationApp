@@ -10,7 +10,7 @@ final class TranslationViewController: UIViewController {
 
     init(hiraganaTranslatorModel: HiraganaTranslatorModel) {
         self.hiraganaTranslatorModel = hiraganaTranslatorModel
-        super.init(nibName: AppConst.translationViewController, bundle: nil)
+        super.init(nibName: "translationViewController".localized, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -22,6 +22,8 @@ final class TranslationViewController: UIViewController {
         setupNavBar()
         beforeTranslationTextView.delegate = self
         hiraganaTranslatorModel.delegate = self
+        beforeTranslationTextView.text = "inputTextView".localized
+        afterTranslationTextView.text = "outputTextView".localized
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -29,7 +31,7 @@ final class TranslationViewController: UIViewController {
     }
 
     private func setupNavBar() {
-        self.title = AppConst.hiraganaTranslation
+        self.title = "hiraganaTranslation".localized
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(removeText(_:)))
         navigationItem.leftBarButtonItem?.tintColor = UIColor.white
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]

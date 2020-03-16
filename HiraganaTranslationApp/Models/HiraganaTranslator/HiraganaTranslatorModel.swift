@@ -50,10 +50,10 @@ final class HiraganaTranslatorModel {
                 print(response)
                 self.hiraganaText = response.converted
             case .failure(.responseError(let error as APPErrorCode)):
-                let errorMessage = ErrorMessage(title: AppConst.error, message: error.localizedDescription)
+                let errorMessage = ErrorMessage(title: "error".localized, message: error.localizedDescription)
                 self.delegate?.hiraganaTranslatorModel(self, didRecieve: errorMessage)
             case .failure(let error):
-                let errorMessage = ErrorMessage(title: AppConst.unknownError, message: error.localizedDescription)
+                let errorMessage = ErrorMessage(title: "unknownError".localized, message: error.localizedDescription)
                 self.delegate?.hiraganaTranslatorModel(self, didRecieve: errorMessage)
             }
         }
