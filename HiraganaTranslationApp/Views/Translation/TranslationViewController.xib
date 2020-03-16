@@ -24,7 +24,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sO5-k6-KEb" userLabel="stackView">
                     <rect key="frame" x="20" y="64" width="374" height="778"/>
                     <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="翻訳したい文章を入力してください。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yFp-YJ-2c3" userLabel="beforeTranslationTextView">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yFp-YJ-2c3" userLabel="beforeTranslationTextView">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="379"/>
                             <color key="backgroundColor" name="TextView"/>
                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -39,7 +39,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textView>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="訳文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-zn-8Dh" userLabel="afterTranslationTextView">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RRt-zn-8Dh" userLabel="afterTranslationTextView">
                             <rect key="frame" x="0.0" y="399" width="374" height="379"/>
                             <color key="backgroundColor" name="TextView"/>
                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -70,7 +70,7 @@
     </objects>
     <resources>
         <namedColor name="TextView">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
