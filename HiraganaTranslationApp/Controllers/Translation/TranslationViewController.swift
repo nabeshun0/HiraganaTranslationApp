@@ -6,7 +6,7 @@ final class TranslationViewController: UIViewController {
     @IBOutlet private weak var afterTranslationTextView: UITextView!
 
     private let hiraganaTranslatorModel: HiraganaTranslatorModel
-    private var isFirst = false
+    private var isFirst = true
 
     init(hiraganaTranslatorModel: HiraganaTranslatorModel) {
         self.hiraganaTranslatorModel = hiraganaTranslatorModel
@@ -47,10 +47,10 @@ final class TranslationViewController: UIViewController {
 extension TranslationViewController: UITextViewDelegate {
 
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
-        if !isFirst {
+        if isFirst {
             beforeTranslationTextView.text = ""
         }
-        isFirst = true
+        isFirst = false
         return true
     }
 
