@@ -1,4 +1,5 @@
 import APIKit
+import Rswift
 
 public enum APIRoutes {
     case fetchHiragana
@@ -6,7 +7,7 @@ public enum APIRoutes {
     public func configurePath() -> (method: HTTPMethod, path: String) {
         switch self {
         case .fetchHiragana:
-            return (.post, "hiragana")
+            return (.post, R.string.localizable.hiragana())
         }
     }
 }

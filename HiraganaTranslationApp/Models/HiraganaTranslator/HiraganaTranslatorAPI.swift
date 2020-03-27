@@ -1,5 +1,6 @@
 import APIKit
 import Foundation
+import Rswift
 
 final class HiraganaTranslatorAPI {
 
@@ -8,7 +9,7 @@ final class HiraganaTranslatorAPI {
 
         private let appId = "9a12d3620f719a654936a3180d90758d52ffdaf9b400cf6cd15ce14173a6cbb4"
         private let sentence: String
-        private let outputType = "hiragana"
+        private let outputType = R.string.localizable.hiragana()
 
         init(sentence: String) {
             self.sentence = sentence
