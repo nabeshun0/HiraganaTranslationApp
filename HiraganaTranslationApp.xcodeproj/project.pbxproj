@@ -14,6 +14,9 @@
 		5E18E7AB2414EAE200CC4834 /* AppRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7AA2414EAE200CC4834 /* AppRequestType.swift */; };
 		5E18E7AD2414ECBA00CC4834 /* APIRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18E7AC2414ECBA00CC4834 /* APIRoutes.swift */; };
 		5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E18E7B02414EF1700CC4834 /* APIKit.framework */; };
+		5E4A071B242DA75B005A3AE4 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4A071A242DA75B005A3AE4 /* Rswift.framework */; };
+		5E4A071C242DA75B005A3AE4 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4A071A242DA75B005A3AE4 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E4A0720242DAD38005A3AE4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4A071F242DAD38005A3AE4 /* R.generated.swift */; };
 		5E4B50D5241F2CC100974996 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4B50D4241F2CC100974996 /* Colors.xcassets */; };
 		5E75FC5B241F973900AC1576 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EB85D18241F50F0006F9E52 /* Localizable.strings */; };
 		5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A6119241144CD00B16CCC /* AppDelegate.swift */; };
@@ -41,6 +44,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5E4A071D242DA75B005A3AE4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E4A071C242DA75B005A3AE4 /* Rswift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5E18E7A12414CDC000CC4834 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
 		5E18E7A42414E65900CC4834 /* HiraganaTranslatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaTranslatorModel.swift; sourceTree = "<group>"; };
@@ -49,6 +66,8 @@
 		5E18E7AA2414EAE200CC4834 /* AppRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestType.swift; sourceTree = "<group>"; };
 		5E18E7AC2414ECBA00CC4834 /* APIRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoutes.swift; sourceTree = "<group>"; };
 		5E18E7B02414EF1700CC4834 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		5E4A071A242DA75B005A3AE4 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
+		5E4A071F242DAD38005A3AE4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		5E4B50D4241F2CC100974996 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5E8A6116241144CD00B16CCC /* HiraganaTranslationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiraganaTranslationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8A6119241144CD00B16CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E18E7B22415031E00CC4834 /* APIKit.framework in Frameworks */,
+				5E4A071B242DA75B005A3AE4 /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +118,7 @@
 		5E18E7AF2414EF1700CC4834 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E4A071A242DA75B005A3AE4 /* Rswift.framework */,
 				5E18E7B02414EF1700CC4834 /* APIKit.framework */,
 			);
 			name = Frameworks;
@@ -115,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8A6119241144CD00B16CCC /* AppDelegate.swift */,
+				5E4A071F242DAD38005A3AE4 /* R.generated.swift */,
 				5E8A6120241144CF00B16CCC /* Assets.xcassets */,
 				5E4B50D4241F2CC100974996 /* Colors.xcassets */,
 				5E8A6122241144CF00B16CCC /* LaunchScreen.storyboard */,
@@ -222,11 +244,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E8A6128241144CF00B16CCC /* Build configuration list for PBXNativeTarget "HiraganaTranslationApp" */;
 			buildPhases = (
+				5E4A071E242DA830005A3AE4 /* Run Script(Rswift) */,
 				5E8A6112241144CD00B16CCC /* Sources */,
 				5E8A6113241144CD00B16CCC /* Frameworks */,
 				5E8A6114241144CD00B16CCC /* Resources */,
 				5E8A612B24114DDD00B16CCC /* Run Script(SwiftLint) */,
 				5E18E7AE2414EEEF00CC4834 /* Run Script(Carthage) */,
+				5E4A071D242DA75B005A3AE4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +351,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 			);
 			name = "Run Script(Carthage)";
 			outputFileListPaths = (
@@ -336,6 +361,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		5E4A071E242DA830005A3AE4 /* Run Script(Rswift) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Run Script(Rswift)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		5E8A612B24114DDD00B16CCC /* Run Script(SwiftLint) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -369,6 +414,7 @@
 				5E18E7A72414E66F00CC4834 /* HiraganaTranslatorAPI.swift in Sources */,
 				5EC2AC7824169042006A1113 /* UIView-extensions.swift in Sources */,
 				5E18E7A92414E67B00CC4834 /* HiraganaTranslatorEntity.swift in Sources */,
+				5E4A0720242DAD38005A3AE4 /* R.generated.swift in Sources */,
 				5E8A611A241144CD00B16CCC /* AppDelegate.swift in Sources */,
 				5E8CD733241F64B40053BAEB /* String-extensions.swift in Sources */,
 			);
